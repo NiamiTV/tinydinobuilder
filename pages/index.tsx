@@ -356,6 +356,65 @@ const availableHands = [
   }
 ]
 
+const availableSpikes = [
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/none.png',
+    label: 'None'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/blue.png',
+    label: 'blue'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/burnt orange.png',
+    label: 'burnt orange'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/dark gray.png',
+    label: 'dark gray'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/green.png',
+    label: 'green'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/light gray.png',
+    label: 'light gray'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/multicolor.png',
+    label: 'multicolor'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/orange.png',
+    label: 'orange'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/pink.png',
+    label: 'pink'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/purple.png',
+    label: 'purple'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/red.png',
+    label: 'red'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/teal.png',
+    label: 'teal'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/white.png',
+    label: 'white'
+  },
+  {
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/yellow.png',
+    label: 'yellow'
+  }
+]
+
 const availableHeads = [
   {
     value: '/tinydinosassets-main/images/traits/1600x1600/head/bandana.png',
@@ -403,64 +462,7 @@ const availableHeads = [
   }
 ]
 
-const availableSpikes = [
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/blue.png',
-    label: 'blue'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/burnt orange.png',
-    label: 'burnt orange'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/dark gray.png',
-    label: 'dark gray'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/green.png',
-    label: 'green'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/light gray.png',
-    label: 'light gray'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/multicolor.png',
-    label: 'multicolor'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/none.png',
-    label: 'none'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/orange.png',
-    label: 'orange'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/pink.png',
-    label: 'pink'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/purple.png',
-    label: 'purple'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/red.png',
-    label: 'red'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/teal.png',
-    label: 'teal'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/white.png',
-    label: 'white'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/yellow.png',
-    label: 'yellow'
-  }
-]
+
 //#endregion
 
 const ReactSelectorStyle = {
@@ -651,16 +653,6 @@ const Home: NextPage = () => {
             value={SelectedHands}
           />
 
-          <h1 className={styles.Subheading}>Head</h1>
-          <Select
-            //@ts-expect-error
-            onChange={setSelectedHead}
-            options={availableHeads}
-            className={styles.Selector}
-            styles={ReactSelectorStyle}
-            defaultValue={SelectedHead}
-            value={SelectedHead}
-          />
 
           <h1 className={styles.Subheading}>Spikes</h1>
           <Select
@@ -672,6 +664,19 @@ const Home: NextPage = () => {
             defaultValue={SelectedSpikes}
             value={SelectedSpikes}
           />
+
+          <h1 className={styles.Subheading}>Head</h1>
+          <Select
+            //@ts-expect-error
+            onChange={setSelectedHead}
+            options={availableHeads}
+            className={styles.Selector}
+            styles={ReactSelectorStyle}
+            defaultValue={SelectedHead}
+            value={SelectedHead}
+          />
+
+          
 
           <div className={styles.buttonGrid}>  
             <button className={styles.Button} style={{backgroundColor: '#e906b8', borderColor: '#61004c'}} onClick={() => RandomiseFeatures()}>
@@ -721,11 +726,11 @@ const Home: NextPage = () => {
             className={styles.imageLayer}
           />
           <img
-            src={String(SelectedHead.value)}
+            src={String(SelectedSpikes.value)}
             className={styles.imageLayer}
           />
           <img
-            src={String(SelectedSpikes.value)}
+            src={String(SelectedHead.value)}
             className={styles.imageLayer}
           />
         </div>
