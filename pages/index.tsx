@@ -289,6 +289,10 @@ const availableEyes = [
 
 const availableFaces = [
   {
+    value: '/tinydinosassets-main/images/traits/1600x1600/face/normal.png',
+    label: 'Normal'
+  },
+  {
     value: '/tinydinosassets-main/images/traits/1600x1600/face/bandages.png',
     label: 'bandages'
   },
@@ -299,10 +303,6 @@ const availableFaces = [
   {
     value: '/tinydinosassets-main/images/traits/1600x1600/face/ninja.png',
     label: 'ninja'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/face/normal.png',
-    label: 'normal'
   },
   {
     value: '/tinydinosassets-main/images/traits/1600x1600/face/noun glasses.png',
@@ -417,6 +417,10 @@ const availableSpikes = [
 
 const availableHeads = [
   {
+    value: '/tinydinosassets-main/images/traits/1600x1600/head/none.png',
+    label: 'None'
+  },
+  {
     value: '/tinydinosassets-main/images/traits/1600x1600/head/bandana.png',
     label: 'bandana'
   },
@@ -447,10 +451,6 @@ const availableHeads = [
   {
     value: '/tinydinosassets-main/images/traits/1600x1600/head/mouse ears.png',
     label: 'mouse ears'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/head/none.png',
-    label: 'none'
   },
   {
     value: '/tinydinosassets-main/images/traits/1600x1600/head/silly yellow.png',
