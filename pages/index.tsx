@@ -13,7 +13,7 @@ import Link from 'next/link'
 //#region 
 const availableBackgrounds = [
   {
-    value: 'none',
+    value: '/tinydinosassets-main/images/traits/1600x1600/spikes/none.png',
     label: 'None'
   },
   {
@@ -699,7 +699,7 @@ const Home: NextPage = () => {
           <img
             src={String(SelectedBackground.value)}
             className={styles.imageLayer}
-            style={{opacity: SelectedBackground.value == 'none' ? 0 : 1}}
+            style={{opacity: SelectedBackground.value == '/tinydinosassets-main/images/traits/1600x1600/spikes/none.png' ? 0 : 1}}
           />
           <img
             src={String(SelectedBody.value)}
