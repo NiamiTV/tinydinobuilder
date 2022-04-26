@@ -17,8 +17,10 @@ const About: NextPage = () => {
             <main className={styles.aboutme}>
                 <h2>Hi Tiny Dino Community!</h2>
                 <p>Created by <a style={{color: '#00CCFF'}} target="_blank" rel="noreferrer" href='https://twitter.com/eight_oo_eight'>@eight_oo_eight</a></p>
+                <a style={{color: '#00CCFF'}} target="_blank" rel="noreferrer" href='https://github.com/NiamiTV/tinydinobuilder'>Github Repo</a>
                 <p>This is just a little project I created after seeing <a style={{color: '#00CCFF'}} target="_blank" rel="noreferrer" href='https://twitter.com/tinydinosnft'>@tinydinosnft</a>&apos;s tweet about such an idea</p>
                 <p>Feel free to give suggestions if you believe that something can be made even better.</p>
+                
                 <Link href={'/'}><a style={{color: '#00CCFF'}}>Back to Builder</a></Link>
             </main>
         </div>
