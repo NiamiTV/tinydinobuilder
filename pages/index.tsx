@@ -681,7 +681,7 @@ const Home: NextPage = () => {
               Export!
             </button>   
             <Link passHref href={'/aboutme'}>
-              <button className={styles.Button} style={{backgroundColor: '#0063EA', borderColor: '#012658'}}>
+              <button className={styles.Button} style={{backgroundColor: '#0063EA', borderColor: '#002860'}}>
                 About Me!
               </button>     
             </Link>
