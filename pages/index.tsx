@@ -320,12 +320,12 @@ const availableFaces = [
 
 const availableFeet = [
   {
-    value: '/tinydinosassets-main/images/traits/1600x1600/feet/hoverboard.png',
-    label: 'hoverboard'
+    value: '/tinydinosassets-main/images/traits/1600x1600/feet/normal.png',
+    label: 'Normal'
   },
   {
-    value: '/tinydinosassets-main/images/traits/1600x1600/feet/normal.png',
-    label: 'normal'
+    value: '/tinydinosassets-main/images/traits/1600x1600/feet/hoverboard.png',
+    label: 'hoverboard'
   },
   {
     value: '/tinydinosassets-main/images/traits/1600x1600/feet/rocket boots.png',
@@ -339,6 +339,10 @@ const availableFeet = [
 
 const availableHands = [
   {
+    value: '/tinydinosassets-main/images/traits/1600x1600/hands/normal.png',
+    label: 'Normal'
+  },
+  {
     value: '/tinydinosassets-main/images/traits/1600x1600/hands/cast left.png',
     label: 'cast left'
   },
@@ -349,11 +353,7 @@ const availableHands = [
   {
     value: '/tinydinosassets-main/images/traits/1600x1600/hands/kite.png',
     label: 'kite'
-  },
-  {
-    value: '/tinydinosassets-main/images/traits/1600x1600/hands/normal.png',
-    label: 'normal'
-  }
+  }  
 ]
 
 const availableSpikes = [
