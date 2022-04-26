@@ -571,7 +571,7 @@ const Home: NextPage = () => {
         <title>Tiny Dino Builder</title>
       </Head>
       <h1 className={styles.Title}>Tiny Dino Builder</h1>
-      <p>Initial loading of images will be very noticable, this will only occur the first time you use the website and select each trait. Apologies!</p>
+      <p className={styles.subtitle}>Initial loading of images will be very noticable, this will only occur the first time you use the website and select each trait. Apologies!</p>
       <main className={styles.main}>
         <div className={styles.controls}>
     
