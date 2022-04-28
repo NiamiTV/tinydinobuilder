@@ -584,6 +584,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedBackground}
             value={SelectedBackground}
+            isSearchable={false}
           />
 
           <h1 className={styles.Subheading}>Body</h1>
@@ -595,6 +596,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedBody}
             value={SelectedBody}
+            isSearchable={false}
           />
 
           <h1 className={styles.Subheading}>Chest</h1>
@@ -606,6 +608,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedChest}
             value={SelectedChest}
+            isSearchable={false}
           />
 
           <h1 className={styles.Subheading}>Eyes</h1>
@@ -617,6 +620,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedEyes}
             value={SelectedEyes}
+            isSearchable={false}
           />
 
           <h1 className={styles.Subheading}>Face</h1>
@@ -628,6 +632,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedFace}
             value={SelectedFace}
+            isSearchable={false}
           />
 
           <h1 className={styles.Subheading}>Feet</h1>
@@ -639,6 +644,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedFeet}
             value={SelectedFeet}
+            isSearchable={false}
           />
 
           <h1 className={styles.Subheading}>Hands</h1>
@@ -650,6 +656,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedHands}
             value={SelectedHands}
+            isSearchable={false}
           />
 
 
@@ -662,6 +669,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedSpikes}
             value={SelectedSpikes}
+            isSearchable={false}
           />
 
           <h1 className={styles.Subheading}>Head</h1>
@@ -673,6 +681,7 @@ const Home: NextPage = () => {
             styles={ReactSelectorStyle}
             defaultValue={SelectedHead}
             value={SelectedHead}
+            isSearchable={false}
           />
 
           
