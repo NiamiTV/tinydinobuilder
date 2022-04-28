@@ -471,7 +471,6 @@ const ReactSelectorStyle = {
     background: '#232323',
     borderColor: '#323232',
     height: '4vh',
-    width: '30vw',
     marginTop: '0.5vh',
     fontFamily: "'Press Start 2P'",
   }),
