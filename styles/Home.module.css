@@ -118,4 +118,8 @@
     grid-template-rows: auto auto auto;
     height: 20vh;
   }
+
+  .aboutme {
+    width: 95%;
+  }
 }
